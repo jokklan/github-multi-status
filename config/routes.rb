@@ -1,4 +1,8 @@
 MultiStatus::Application.routes.draw do
+  scope defaults: { format: "json" } do
+    resources :statuses
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
